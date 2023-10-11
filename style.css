@@ -1,0 +1,238 @@
+/* Google Font Popins */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500&display=swap');
+
+/* Comon Style and Utilities */
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(226, 220, 220);
+}
+
+/* Header Styles */
+.menu-bar i {
+    margin-left: -50px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.icon-bar {
+    position: absolute;
+    right: 0%;
+    margin-right: 100px;
+}
+
+.icon-bar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Main Container Body Start  */
+/* Main  */
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Section 1  */
+.section-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-1-text {
+    width: 50%;
+}
+
+.button {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: rgb(173, 7, 104);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section-1-img {
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.section-1-img img {
+    width: 400px;
+}
+
+/* Section 2  */
+.section-2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.section-2-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-logo img {
+    width: 100px;
+}
+
+.section-2-hr hr {
+    border: 1px solid gray;
+}
+
+/* Section 3  */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3-title {
+    margin-bottom: 30px;
+}
+
+.sec-3-all-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.section-3-content {
+    padding-top: 15px;
+    width: 410px;
+    background-color: rgb(249, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.sec3-txt {
+    margin-top: -15px;
+    margin-left: -150px;
+}
+
+.sec3-img img {
+    width: 380px;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.star-icon i {
+    color: goldenrod;
+}
+
+/* Section 4  */
+.section-4 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.section-4-img img {
+    width: 480px;
+    border-radius: 10px;
+}
+
+/* Footer  */
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(3, 3, 39);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-top: -10px;
+}
+
+.footer-icon i {
+    margin-left: 20px;
+}
+
+/* -------------
+   Media Queries  
+   ------------- */
+
+@media only screen and (max-width: 568px) {
+    body {
+        margin: none;
+    }
+
+    main {
+        margin: none;
+    }
+
+    /* Header  */
+    .header-container {
+        width: 100%;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+
+    /* Section-1  */
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section-1-text {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectiom-1-img img {
+        width: 150px;
+    }
+
+    /* Section-2  */
+
+    .section-2-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    /* Section-3  */
+    .sec-3-all-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* section-4  */
+    .section-4 {
+        flex-direction: column;
+    }
+}
